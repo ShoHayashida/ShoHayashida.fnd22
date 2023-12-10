@@ -33,7 +33,7 @@ body{
     margin-bottom: 20px;
   }
   
-  /* input[type="password"], */
+  input[type="password"],
   input[type="text"] {
     width: 93%;
     padding: 10px;
