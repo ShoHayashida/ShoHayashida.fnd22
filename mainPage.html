@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="mainPage.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>info-share-page</title>
+</head>
+
+
+<body>
+
+  <header>
+    <h1 class="title">🌍 CA page: info list related to the WP29 🌍</h1>
+    <nav class="nav">
+      <ul class="menu-group">
+        <!-- <li>カウンタートライ</li>
+        <IMG SRC="/cgi-bin/Count.cgi?df=xxx.dat"> -->
+        <li class="menu-item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="mailReceive">
+      <div class="description"> To receive email when new info is uploaded:</div>
+      <input type="text" name="mail" min="0" max="50" placeholder="TMC mail address" />
+      <button id="btnMail" type="submit">click</button>
+    </div>
+  
+    <div class="GR"> <b>GRVA</b>
+
+      <div class="eachDoc">
+        <div class="newMark" id="statusGRVA1">New!!</div>
+        <div class="docTitle">The approval of vehicles wrt Driver Control Assistance Systems</div>
+        <div id="docGRVA1">
+          <a href= "https://unece.org/sites/default/files/2023-11/ECE-TRANS-WP.29-GRVA-2024-02e.pdf" target="_blank" >Open PDF</a>
+        </div>
+        <div class="docComment">The relevant provisions are considered to be addressed and possibly amended by the TF on ADAS 
+          through the submission of additional informal documents for the eighteenth GRVA session.</div>
+
+      </div>
+
+      <div class="eachDoc">
+        <div class="newMark" id="statusGRVA2">New!!</div>
+        <div class="docTitle">Proposal for a supplement to UN Regulation No. 157</div>
+        <div id="docGRVA2">
+          <a href= "https://unece.org/sites/default/files/2023-11/ECE-TRANS-WP.29-GRVA-2024-03e_0.pdf" target="_blank" >Open PDF</a>
+        </div>
+        <div class="docComment">The text reproduced below was prepared by the representatives of France and 
+          presented to the GRVA at its seventeenth session</div>
+
+      </div>
+
+      <div class="eachDoc">
+        <div class="comingSoonMark">coming soon</div>
+        <div class="docTitle">Proposal for a supplement to UN Regulation No. 155</div>
+        <div class="docGRVA3">
+          <a>Open PDF</a>
+        </div>
+        <div class="docComment">The text reproduced below was prepared by the representatives of France and 
+          presented to the GRVA at its seventeenth session</div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="GR"> <b>GRBP</b>
+
+      <div class="eachDoc">
+        <div class="newMark" id="statusGRBP1">New!!</div>
+        <div class="docTitle">Proposal for a new series of amendments to UN Regulation 
+          No. 138</div>
+        <div id="docGRBP1">
+          <a href= "https://unece.org/sites/default/files/2023-11/ECE-TRANS-WP29-GRBP-2024-02e.pdf" target="_blank" >Open PDF</a>
+        </div>
+        <div class="docComment">The text reproduced below was prepared by the experts from the Task Force on Quiet 
+          Road Transport Vehicles (TF QRTV)</div>
+      </div>
+    </div>
+
+  </main>
+  
+  <footer><b>Future work</b>
+    <ol><b>国連サイトの変化点の取得</b>
+      <ol>国連サイトの会議ページ作成で通知</ol>
+      <ol>ドキュメントがアップロードされた段階で通知</ol>
+    </ol>
+    <ol><b>国連サイトの資料を自動で本サイトに移動</b>
+      <ol>PDFのリンク（ドキュメントのURL）を取得し、本サイトに持ってくる(document.getElementById("XXX").innerText ="YYY")</ol>
+      <ol>ワードをダウンロードして本サイトに持ってくる</ol>
+      <ol>ワードを自動的にSPOに格納し、そのリンクを本サイトに持ってくる(.appendChildを外部サイトの変化をトリガー設定？)</ol>
+    </ol>
+    <ol id="progress"><b>現状確認エリアが<font color="red">New!!</font>が✅にならないユーザーへの通知</b>
+      <ol>画面読み込む度に初期設定になる仕様の変更</ol>
+      <ol>現状確認エリアの<font color="red">New!!</font>が一定期間（例えば3日間）✅に変わらない場合にトリガー</ol>
+    </ol>
+  </footer>
+  
+  <script src="mainPage.js"></script>
+</body>
+</html>
