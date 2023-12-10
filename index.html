@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="login-page.css">
+  <link rel="stylesheet" href="index.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>login page</title>
@@ -11,16 +11,16 @@
 <body>
 
   <div class="login">
-    <form id="loginBackground" action="./main-page.html"><!--formタグで、ユーザーからの入力受け付ける。ここで閲覧カウントしたい-->
+    <form id="passCheck" action="./mainPage.html"><!--formタグで、ユーザーからの入力受け付ける。ここで閲覧カウントしたい-->
       <p class="fsize">🌍Login Page🌏</p>
-      <input type="text" placeholder="TMC mail address" />
-      <!-- <input type="password" placeholder="Password" /> -->
-      <button type="submit">login</button>
+      <input type="text" name="mail" min="0" max="50" placeholder="TMC mail address" />
+      <input type="password" name="password"  min="1" max="8" placeholder="Password" />
+      <button id="btnLogin" type="submit">login</button>
     </form>
   </div>
 
   <!-- <div class="parent1"></div> -->
 
-  
+  <script src="index.js"></script>
 </body>
 </html>
