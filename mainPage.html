@@ -82,23 +82,29 @@
       </div>
     </div>
 
+
+    <button id="summary">Summary</button>
+
+    <div id="futureWork"> <b><big>Future work</big></b>
+      
+      <ol><b><a href="https://unece.org/info/events/unece-meetings-and-events/vehicle-regulations">国連サイト</a>の変化点の取得</b>
+        <ol>国連サイトの会議ページ作成で通知</ol>
+        <ol>ドキュメントがアップロードされた段階で通知</ol>
+      </ol>
+      <ol><b>国連サイトの資料を自動で本サイトに移動</b>
+        <ol>PDFのリンク（ドキュメントのURL）を取得し、本サイトに持ってくる(document.getElementById("XXX").innerText ="YYY")</ol>
+        <ol>ワードをダウンロードして本サイトに持ってくる</ol>
+        <ol>ワードを自動的にSPOに格納し、そのリンクを本サイトに持ってくる(.appendChildを外部サイトの変化をトリガー設定？)</ol>
+      </ol>
+      <ol id="progress"><b>現状確認エリアが<font color="red">New!!</font>が✅にならないユーザーへの通知</b>
+        <ol>画面読み込む度に初期設定になる仕様の変更</ol>
+        <ol>現状確認エリアの<font color="red">New!!</font>が一定期間（例えば3日間）✅に変わらない場合にトリガー</ol>
+      </ol>
+    </div>
+
   </main>
   
-  <footer><b>Future work</b>
-    <ol><b><a href="https://unece.org/info/events/unece-meetings-and-events/vehicle-regulations">国連サイト</a>の変化点の取得</b>
-      <ol>国連サイトの会議ページ作成で通知</ol>
-      <ol>ドキュメントがアップロードされた段階で通知</ol>
-    </ol>
-    <ol><b>国連サイトの資料を自動で本サイトに移動</b>
-      <ol>PDFのリンク（ドキュメントのURL）を取得し、本サイトに持ってくる(document.getElementById("XXX").innerText ="YYY")</ol>
-      <ol>ワードをダウンロードして本サイトに持ってくる</ol>
-      <ol>ワードを自動的にSPOに格納し、そのリンクを本サイトに持ってくる(.appendChildを外部サイトの変化をトリガー設定？)</ol>
-    </ol>
-    <ol id="progress"><b>現状確認エリアが<font color="red">New!!</font>が✅にならないユーザーへの通知</b>
-      <ol>画面読み込む度に初期設定になる仕様の変更</ol>
-      <ol>現状確認エリアの<font color="red">New!!</font>が一定期間（例えば3日間）✅に変わらない場合にトリガー</ol>
-    </ol>
-  </footer>
+  <footer></footer>
   
   <script src="mainPage.js"></script>
 </body>
