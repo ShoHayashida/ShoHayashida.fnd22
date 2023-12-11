@@ -132,3 +132,12 @@ main{
             width: 40%;
         }
 
+
+    #futureWork{
+        font-family: "Amatic SC", cursive;
+        font-size: large;
+        /* background-color: rgba(255, 255, 0, 0); */
+        /* color: transparent; */
+        width: 90%;
+        /* display: none; */
+    }
