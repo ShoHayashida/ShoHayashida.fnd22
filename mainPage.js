@@ -32,3 +32,19 @@ function addCheckMarkToGRBP1(){
 }
     const loadGRBP1 = document.getElementById("docGRBP1");
     loadGRBP1.addEventListener("click",addCheckMarkToGRBP1);
+
+
+//まとめ説明
+
+
+// let s = document.querySelector('futureWork');
+let s = document.getElementById('futureWork');
+s.setAttribute('hidden', '');
+
+function showup(){
+    s.removeAttribute('hidden', '');
+}
+    const progress = document.getElementById("summary");
+    progress.addEventListener("click",showup);
+
+
