@@ -5,11 +5,11 @@ function mailAndPassCheck(){
     let result = "";
     const inputMail = document.getElementsByName("mail")[0].value;
     const inputPassword = document.getElementsByName("password")[0].value;
-    if(inputMail !== "sho_hayashida@mail.toyota.co.jp"){
+    if(inputMail !== "0000"){
         window.alert("This e-mail address is not registered.");
         document.getElementById("passCheck").action = "./index.html";
     }
-    if(inputPassword !== "000000"){
+    if(inputPassword !== "0000"){
         window.alert("Wrong password.");
         document.getElementById("passCheck").action = "./index.html";
     }
